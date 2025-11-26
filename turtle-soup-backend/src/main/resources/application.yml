@@ -9,7 +9,7 @@ spring:
     username: ${turtle.datasource.username}
     password: ${turtle.datasource.password}
     hikari:
-      connection-timeout: 20000
+      connection-timeout: 30000
       maximum-pool-size: 10
   data:
     redis:
@@ -38,8 +38,8 @@ logging:
     com:
       turtle:
         mapper: debug
-        service: info
-        controller: info
+        service: debug
+        controller: debug
 
 # springdoc-openapi
 springdoc:
